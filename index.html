@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Osman Can CEYLAN</title>
+    
+    
+    <style>
+        body{
+            text-align: center;
+            background-color: #1b1b32;
+            color: #fff;
+            font-family: cursive;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .form{
+            width: 40%;
+            margin: auto;
+            text-align: left;
+            padding-left: 15px;
+        }
+        ul li{
+            padding: 0;
+        }
+        input{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        .inputarea{
+            margin: 15px 0;
+        }
+        .inputarea input{
+            width: 99%;
+            height: 40px;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .radio-btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .radio-btn ul li{
+            margin-bottom: 5px;
+        }
+        a{
+            color: #fff;;
+        }
+        .input{
+            width: 99%;
+            background-color: #272e67;
+        }
+        input[type="submit"]{
+            display: block;
+            background-color: #3d4379;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            margin-top: 15px;
+        }
+        input[type="file"]{
+            margin-bottom: 15px;
+        }
+
+        hr{
+            margin: 15px 0;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+    <p>Lütfen bütün formu gerekli bilgilerle doldurun</p>
+    <div class="form">
+        <form action="#" method="POST">
+            <ul>
+                <li>
+                    <div class="inputarea">
+                        <p>Adınız</p>
+                        <input type="text" class="input">
+                    </div>
+                </li>
+                <li>
+                    <div class="inputarea">
+                        <p>Soyadınız</p>
+                        <input type="text" class="input">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="inputarea">
+                        <p>E-Mail</p>
+                        <input type="text" class="input">
+                    </div>
+                </li>
+                <li>
+                    <div class="inputarea">
+                        <p>Şifreniz</p>
+                        <input type="text" class="input">
+
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div class="radio-btn">
+                      <ul>
+                          <li><input type="radio" name="hesap-tipi" value="Personel Hesabı">Kişisel Hesap</li>
+                          <li><input type="radio" name="hesap-tipi" value="Personel Hesabı">Şirket Hesabı</li>
+                          <li><input type="checkbox" name="sozlesme"> <a href="#">Kullanım Koşullarını</a> kabul ediyorum</li>
+                      </ul>
+                       
+                        
+                        
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <p>Profil fotoğrafınızı yükleyin:</p>
+                    <input type="file">
+                </li>
+                <li>
+                    <p>Yaşınız</p>
+                    <input type="number" class="input" style="height: 40px;">
+                </li>
+                <li>
+                    <p>Bize nereden ulaştınız?</p>
+                    <select name="contact" id="contact" class="input" style="color: #fff; height: 40px;">
+                        <option value="">(Bir tane seçin)</option>
+                        <option value="1">İnstagram</option>
+                        <option value="2">Twitter</option>
+                        <option value="3">Discord</option>
+                        <option value="4">Diğer</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="submit" value="Gönder">
+                </li>
+                
+            </ul>
+        </form>
+    
+    </div>
+</body>
+</html>
